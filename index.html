@@ -1,49 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Technical Documentation</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bree Serif"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <nav id="navbar">
-        <header>C# Tutorial</header>
-        <a class="nav-link" href="#Introduction">Introduction</a>
-        <a class="nav-link" href="#Syntax">Syntax</a>
-        <a class="nav-link" href="#Data_Types">Data Types</a>
-        <a class="nav-link" href="#Variables">Variables</a>
-        <a class="nav-link" href="#Type_Casting">Type Casting</a>
-        <a class="nav-link" href="#User_Input">User Input</a>
-        <a class="nav-link" href="#User_Input">Booleans</a>
+      <header>C# Tutorial</header>
+      <a class="nav-link" href="#Introduction">Introduction</a>
+      <a class="nav-link" href="#Syntax">Syntax</a>
+      <a class="nav-link" href="#Data_Types">Data Types</a>
+      <a class="nav-link" href="#Variables">Variables</a>
+      <a class="nav-link" href="#Type_Casting">Type Casting</a>
+      <a class="nav-link" href="#User_Input">User Input</a>
+      <a class="nav-link" href="#User_Input">Booleans</a>
     </nav>
 
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <p>C# is a programming language developed by Microsoft.</p>
-            <p>C# is used in many fields , Some of them are:-</p>
-            <ol>
-                <li>Desktop App Development</li>
-                <li>Mobile App Development</li>
-                <li>Game Development</li>
-                <li>Backend Web Development</li>
-            </ol>
-            <p>C# is one of the most popular programming languages , Because:-</p>
-            <ul>
-                <li>It is a programming language developed by Microsoft</li>
-                <li>It is a high-level programming language which is easy to learn</li>
-                <li>It is more secure than many programming languages</li>
-                <li>It is close to C , C++ and Java ... It is easy for programmers to switch to C# or vice versa</li>
-            </ul>
-        </section>
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>C# is a programming language developed by Microsoft.</p>
+        <p>C# is used in many fields , Some of them are:-</p>
+        <ol>
+          <li>Desktop App Development</li>
+          <li>Mobile App Development</li>
+          <li>Game Development</li>
+          <li>Backend Web Development</li>
+        </ol>
+        <p>C# is one of the most popular programming languages , Because:-</p>
+        <ul>
+          <li>It is a programming language developed by Microsoft</li>
+          <li>
+            It is a high-level programming language which is easy to learn
+          </li>
+          <li>It is more secure than many programming languages</li>
+          <li>
+            It is close to C , C++ and Java ... It is easy for programmers to
+            switch to C# or vice versa
+          </li>
+        </ul>
+      </section>
 
-        <section class="main-section" id="Syntax">
-            <header>Syntax</header>
-            <p>Syntax is the structure of statements , Here is a simple program typed in C# to discuss the meaning of syntax</p>
-            <pre><code>using System;
+      <section class="main-section" id="Syntax">
+        <header>Syntax</header>
+        <p>
+          Syntax is the structure of statements , Here is a simple program typed
+          in C# to discuss the meaning of syntax
+        </p>
+        <pre>
+          <code>using System;
 namespace Hello
 {
     class MyProgram
@@ -59,67 +71,127 @@ namespace Hello
             Console.WriteLine("AAA");
         }
     }
-}</code></pre>
-        </section>
+}</code>
+          <button class="btn copy-code big">
+              <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+              <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+      </section>
 
-        <section class="main-section" id="Data_Types">
-            <header>Data Types</header>
-            <p>Some data types that are supported by C# :-</p>
-            <ol>
-                <li>integer (int) ... 1 , 500 , -200</li>
-                <li>double (double) ... 0.5 , 3.14 , -2.5</li>
-                <li>string (string) ... "AAA" , "What is your name ?"</li>
-                <li>character (char) ... 'A' , '+' , '5'</li>
-                <li>boolean (bool) ... true , false</li>
-            </ol>
-        </section>
+      <section class="main-section" id="Data_Types">
+        <header>Data Types</header>
+        <p>Some data types that are supported by C# :-</p>
+        <ol>
+          <li>integer (int) ... 1 , 500 , -200</li>
+          <li>double (double) ... 0.5 , 3.14 , -2.5</li>
+          <li>string (string) ... "AAA" , "What is your name ?"</li>
+          <li>character (char) ... 'A' , '+' , '5'</li>
+          <li>boolean (bool) ... true , false</li>
+        </ol>
+      </section>
 
-        <section class="main-section" id="Variables">
-            <header>Variables</header>
-            <p>Variables are containers for storing data values.</p>
-            <p>The syntax for declaring a variable and assigning a value to it is as following :</p>
-            <pre><code>data-type variable-name = value(data) ;</code></pre>
-            <p>For example :-</p>
-            <pre><code>int age = 20 ;
-string FirstName = "AAA" ;
-string full_name = "AAA BBB" ;
-double _degree = 80.5 ;
-char grade = 'A' ;
-bool student = true ;
-bool male = true ;</code></pre>
-        </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>Variables are containers for storing data values.</p>
+        <p>
+          The syntax for declaring a variable and assigning a value to it is as
+          following :
+        </p>
+        <pre>
+          <code>data-type variable-name = value(data);</code>
+            <button class="btn copy-code">
+                <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+                <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+            </button>
+        </pre>
+        <p>For example :-</p>
+        <pre>
+          <code>int age = 20;
+string FirstName = "AAA";
+string full_name = "AAA BBB";
+double _degree = 80.5;
+char grade = 'A';
+bool student = true;
+bool male = true;</code>
+          <button class="btn copy-code">
+              <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+              <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+      </section>
 
-        <section class="main-section" id="Type_Casting">
-            <header>Type Casting</header>
-            <p>Type casting means turning a certain data from a type to another one.</p>
-            <p>Syntax for type casting is :-</p>
-            <pre><code>(data-type) data</code></pre>
-            <p>For example :-</p>
-            <pre><code>double pi = 3.14 ;
-int myInt = (int) pi ;
-Console.WriteLine(pi) ; // 3.14
-Console.WriteLine(myInt) ; // 3</code></pre>
-        </section>
+      <section class="main-section" id="Type_Casting">
+        <header>Type Casting</header>
+        <p>
+          Type casting means turning a certain data from a type to another one.
+        </p>
+        <p>Syntax for type casting is :-</p>
+        <pre>
+          <code>(data-type) data</code>
+          <button class="btn copy-code">
+            <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+            <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+        <p>For example :-</p>
+        <pre>
+          <code>double pi = 3.14;
+int myInt = (int) pi;
+Console.WriteLine(pi); // 3.14
+Console.WriteLine(myInt); // 3</code>
+          <button class="btn copy-code">
+            <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+            <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+      </section>
 
-        <section class="main-section" id="User_Input">
-            <header>User Input</header>
-            <p>You already know that Console.WriteLine() is used to output text.</p>
-            <p>Now you are going to learn how to use Console.ReadLine() to get user input.</p>
-            <pre><code>Console.ReadLine();</code></pre>
-            <p>For example :-</p>
-            <pre><code>int age ;
-Console.Write("Enter your age:") ;
-age = Console.ReadLine() ;
-Console.WriteLine("You are " + age + " years old") ;</code></pre>
-        </section>
+      <section class="main-section" id="User_Input">
+        <header>User Input</header>
+        <p>You already know that Console.WriteLine() is used to output text.</p>
+        <p>
+          Now you are going to learn how to use Console.ReadLine() to get user
+          input.
+        </p>
+        <pre>
+          <code>Console.ReadLine();</code>
+          <button class="btn copy-code">
+            <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+            <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+        <p>For example:-</p>
+        <pre>
+          <code>int age;
+Console.Write("Enter your age:");
+age = Console.ReadLine();
+Console.WriteLine("You are " + age + " years old");</code>
+          <button class="btn copy-code">
+            <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+            <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+      </section>
 
-        <section class="main-section" id="Booleans">
-            <header>Booleans</header>
-            <p>Booleans are data types that can be used to control whether something is true or false(yes or no / on or off).</p>
-            <pre><code>bool male = true ;
-bool student = true ;
-bool permission_accepted = false ;</code></pre>
-        </section>
+      <section class="main-section" id="Booleans">
+        <header>Booleans</header>
+        <p>
+          Booleans are data types that can be used to control whether something
+          is true or false(yes or no / on or off).
+        </p>
+        <pre>
+          <code>bool male = true;
+bool student = true;
+bool permission_accepted = false;</code>
+          <button class="btn copy-code">
+            <svg class="clipboard" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="clipboard-alt"><path fill="#E2E2E2" d="M15,14H9a1,1,0,0,0,0,2h6a1,1,0,0,0,0-2Zm0-4H11a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm2-6H15.82A3,3,0,0,0,13,2H11A3,3,0,0,0,8.18,4H7A3,3,0,0,0,4,7V19a3,3,0,0,0,3,3H17a3,3,0,0,0,3-3V7A3,3,0,0,0,17,4ZM10,5a1,1,0,0,1,1-1h2a1,1,0,0,1,1,1V6H10Zm8,14a1,1,0,0,1-1,1H7a1,1,0,0,1-1-1V7A1,1,0,0,1,7,6H8V7A1,1,0,0,0,9,8h6a1,1,0,0,0,1-1V6h1a1,1,0,0,1,1,1Z"></path></svg>
+            <svg class="copy-file" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="file-check-alt"><path fill="#E2E2E2" d="M11.5,20h-6a1,1,0,0,1-1-1V5a1,1,0,0,1,1-1h5V7a3,3,0,0,0,3,3h3v5a1,1,0,0,0,2,0V9s0,0,0-.06a1.31,1.31,0,0,0-.06-.27l0-.09a1.07,1.07,0,0,0-.19-.28h0l-6-6h0a1.07,1.07,0,0,0-.28-.19.29.29,0,0,0-.1,0A1.1,1.1,0,0,0,11.56,2H5.5a3,3,0,0,0-3,3V19a3,3,0,0,0,3,3h6a1,1,0,0,0,0-2Zm1-14.59L15.09,8H13.5a1,1,0,0,1-1-1ZM7.5,14h6a1,1,0,0,0,0-2h-6a1,1,0,0,0,0,2Zm4,2h-4a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Zm-4-6h1a1,1,0,0,0,0-2h-1a1,1,0,0,0,0,2Zm13.71,6.29a1,1,0,0,0-1.42,0l-3.29,3.3-1.29-1.3a1,1,0,0,0-1.42,1.42l2,2a1,1,0,0,0,1.42,0l4-4A1,1,0,0,0,21.21,16.29Z"></path></svg>
+          </button>
+        </pre>
+      </section>
     </main>
-</body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
